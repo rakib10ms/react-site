@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.App{
+  height: 100vh;
+  width: 100vw;
+}
+.Home{
+  text-align: center;
+  padding: 10px;
+}
+.Home img{
+  width:50%;
+}
+@media (max-width:600px){
+  .Home img{
+    width: 70%;
+  }
+}
+.about{
+  max-width: 1000px;
+  margin:0 auto;
+  font-weight: 600;
+}
+.about .skills{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: orange;
+}
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.parent .child{
+  height: 450px;
+  width: 400px;
+  box-shadow: 6px 6px 8px #dddd;
+  border: 1px solid #d2d2d2;
+  margin: 1rem;
+  padding:0.5rem 1rem;
+}
+.parent .child img{
+  width:70%;
+  height: 65%;
+}
+.parent .child i{
+  margin-right:1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color:orange;
+  cursor: pointer;
+}
+.parent .child:hover i{
+  transition: all 0.3s;
+   transform:translateY(-10px);
+   color:black;
+}
+.Footer a{
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
